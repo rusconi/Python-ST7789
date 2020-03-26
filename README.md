@@ -10,6 +10,8 @@ Python library to control an ST7789 TFT LCD display
 
 Designed specifically to work with a ST7789 based 240x240 pixel TFT SPI display. (Specifically the 1.3" SPI LCD from Pimoroni).
 
+Updated to allow spi mode to be set.
+
 Make sure you have the following dependencies:
 
 ````
@@ -19,11 +21,7 @@ sudo apt-get install python-rpi.gpio python-spidev python-pip python-pil python-
 
 Install this library by running:
 
-````
-sudo pip install st7789
-````
 
-See example of usage in the examples folder.
 
 
 # Licensing & History

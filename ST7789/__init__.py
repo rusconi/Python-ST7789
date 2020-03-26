@@ -26,7 +26,7 @@ import spidev
 import RPi.GPIO as GPIO
 
 
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 
 BG_SPI_CS_BACK = 0
 BG_SPI_CS_FRONT = 1
@@ -98,7 +98,7 @@ ST7789_PWCTR6 = 0xFC
 class ST7789(object):
     """Representation of an ST7789 TFT LCD."""
 
-    def __init__(self, port, cs, dc, backlight=None, rst=None, width=240,
+    def __init__(self, port, cs, dc, backlight=None, rst=None, mode=0, width=240,
                  height=240, rotation=90, invert=True, spi_speed_hz=4000000):
         """Create an instance of the display using SPI communication.
 
@@ -110,6 +110,7 @@ class ST7789(object):
         :param cs: SPI chip-select number (0 or 1 for BCM
         :param backlight: Pin for controlling backlight
         :param rst: Reset pin for ST7789
+        :param mode: default = 0. Use mode=3 for boards with no cs pin
         :param width: Width of display connected to ST7789
         :param height: Height of display connected to ST7789
         :param rotation: Rotation of display connected to ST7789
@@ -122,7 +123,7 @@ class ST7789(object):
         GPIO.setmode(GPIO.BCM)
 
         self._spi = spidev.SpiDev(port, cs)
-        self._spi.mode = 0
+        self._spi.mode = mode
         self._spi.lsbfirst = False
         self._spi.max_speed_hz = spi_speed_hz
 
