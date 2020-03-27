@@ -17,12 +17,8 @@ sudo apt-get install python-rpi.gpio python-spidev python-pip python-pil python-
 ````
 Install this library by running:
 ```
-git clone https://github.com/rusconi/st7789-python.git
-cd st7789-python
-sudo pip3 install .
+sudo pip3 install ST7789p==0.0.3
 ```
-
-*ensure the full stop is included in the last line*
 
 # Licensing & History
 
