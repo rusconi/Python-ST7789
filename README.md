@@ -1,4 +1,4 @@
-# Python ST7789
+# Python ST7789p
 
 
 
