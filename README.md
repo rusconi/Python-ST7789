@@ -1,9 +1,6 @@
 # Python ST7789
 
-[![Build Status](https://travis-ci.com/pimoroni/st7789-python.svg?branch=master)](https://travis-ci.com/pimoroni/st7789-python)
-[![Coverage Status](https://coveralls.io/repos/github/pimoroni/st7789-python/badge.svg?branch=master)](https://coveralls.io/github/pimoroni/st7789-python?branch=master)
-[![PyPi Package](https://img.shields.io/pypi/v/st7789.svg)](https://pypi.python.org/pypi/st7789)
-[![Python Versions](https://img.shields.io/pypi/pyversions/st7789.svg)](https://pypi.python.org/pypi/st7789)
+
 
 
 Python library to control an ST7789 TFT LCD display
@@ -18,11 +15,14 @@ Make sure you have the following dependencies:
 sudo apt-get update
 sudo apt-get install python-rpi.gpio python-spidev python-pip python-pil python-numpy
 ````
-
 Install this library by running:
+```
+git clone https://github.com/rusconi/st7789-python.git
+cd st7789-python
+sudo pip3 install .
+```
 
-
-
+*ensure the full stop is included in the last line*
 
 # Licensing & History
 
@@ -41,6 +41,6 @@ Pimoroni invests time and resources forking and modifying this open source code,
 
 Adafruit invests time and resources providing this open source code, please support Adafruit and open-source hardware by purchasing products from Adafruit!
 
-Modified from 'Modified from 'Adafruit Python ILI9341' written by Tony DiCola for Adafruit Industries.' written by Clement Skau.
+Modified from the Pimoroni st7789-python 'Modified from 'Adafruit Python ILI9341' written by Tony DiCola for Adafruit Industries.' written by Clement Skau.
 
 MIT license, all text above must be included in any redistribution
