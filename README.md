@@ -4,14 +4,14 @@
 Python library to control an ST7789 TFT LCD display
 
 Designed specifically to work with a ST7789 based 240x240 pixel TFT SPI display. (Specifically the 1.3" SPI LCD from Pimoroni).
-
+<div class="text-purple">
 Updated to allow spi mode to be set.
 
 Some ST7789 display boards have no chip select (cs) pin. The spi mode must be set to 3 for these boards to work. 
 Other boards, including the Pirate Audio boards, work with spi mode set to 0, which is the default for the Pimoroni st7789-python driver.
 
 This is an update that allows a mode parameter to be passed to the driver.
-
+</div>
 Usage: Create ST7789 LCD display class for a board with no cs pin. For Pirate Audio or boards with a cs pin set mode=0, 
 or even delete the "mode=3," line as the default is 0.
 
@@ -33,14 +33,14 @@ disp = ST7789.ST7789(
 
 Make sure you have the following dependencies:
 
-```shell
+```
 
 sudo apt-get update
 sudo apt-get install python-rpi.gpio python-spidev python-pip python-pil python-numpy
 ```
 Install this library by running:
 
-```shell
+```
 sudo pip3 install ST7789p
 ```
 
