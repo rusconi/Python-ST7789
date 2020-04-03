@@ -33,12 +33,14 @@ disp = ST7789.ST7789(
 
 Make sure you have the following dependencies:
 
-````
+```shell
+
 sudo apt-get update
 sudo apt-get install python-rpi.gpio python-spidev python-pip python-pil python-numpy
-````
-Install this library by running:
 ```
+Install this library by running:
+
+```shell
 sudo pip3 install ST7789p
 ```
 
