@@ -11,7 +11,7 @@ classifiers = ['Development Status :: 4 - Beta',
                'Topic :: System :: Hardware']
 
 setup(name='RPI-ST7789',
-      version='0.0.4',
+      version='0.0.4a',
       description='Library to control an ST7789 240*240 TFT LCD display.',
       long_description=open('README.md').read() + '\n' + open('CHANGELOG.txt').read(),
       long_description_content_type='text/markdown',
