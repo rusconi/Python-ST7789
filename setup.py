@@ -10,7 +10,7 @@ classifiers = ['Development Status :: 4 - Beta',
                'Topic :: Software Development',
                'Topic :: System :: Hardware']
 
-setup(name='ST7789',
+setup(name='RPI-ST7789',
       version='0.0.4',
       description='Library to control an ST7789 240*240 TFT LCD display.',
       long_description=open('README.md').read() + '\n' + open('CHANGELOG.txt').read(),
@@ -19,5 +19,5 @@ setup(name='ST7789',
       author='Russell bayley',
       author_email='russell.bayley@gmail.com',
       classifiers=classifiers,
-      url='https://github.com/rusconi/Python-ST7789',
+      url='https://github.com/rusconi/Rpi-ST7789',
       packages=find_packages())
