@@ -1,4 +1,4 @@
-# Rpi ST7789
+# RPI ST7789
 
 
 Python library to control an ST7789 TFT LCD display
@@ -17,7 +17,7 @@ or even delete the "mode=3," line as the default is 0.
 
 ```python
 
-import ST7789
+import RPI-ST7789 as ST7789
 
 disp = ST7789.ST7789(
     port=0,
@@ -41,7 +41,7 @@ sudo apt-get install python-rpi.gpio python-spidev python-pip python-pil python-
 Install this library by running:
 
 ```
-sudo pip3 install ST7789
+sudo pip3 install RPI-ST7789
 ```
 
 # Licensing & History
