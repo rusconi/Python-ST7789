@@ -41,7 +41,7 @@ sudo apt-get install python-rpi.gpio python-spidev python-pip python-pil python-
 Install this library by running:
 
 ```
-sudo pip3 install ST7789
+sudo pip3 install Rpi-ST7789
 ```
 
 # Licensing & History
